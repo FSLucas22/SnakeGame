@@ -1,8 +1,5 @@
-import pygame
 from pygame.locals import *
 from button import Buttons
-from game import Game
-
 from scenery import Scenery, Scenerys
 from texts import Font, Text
 

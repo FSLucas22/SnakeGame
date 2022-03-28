@@ -2,7 +2,6 @@ import random
 import pygame
 from pygame.locals import *
 from colors import Color
-from audio import MusicOptions
 from button import Buttons
 from game import Game
 from scenery import Scenery, Scenerys

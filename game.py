@@ -1,5 +1,4 @@
 from dataclasses import dataclass, field
-from typing import Callable
 from colors import Color
 from direction import Direction
 from foodgenerator import generate_food
