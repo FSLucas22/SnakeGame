@@ -39,7 +39,7 @@ class Scenery(ABC):
             cls.end(game)
 
             cls.update(game)
-        cls.end_setup(game)
+        cls.close_setup(game)
     
     @classmethod
     def handle_events(cls, game: Game) -> None:
