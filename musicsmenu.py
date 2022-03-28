@@ -19,6 +19,11 @@ class MusicsMenu(Scenery):
                 font=Font.LARGE,
             )]
     keys = {}
+
+    @classmethod
+    def start(cls, game: Game) -> None:
+        title = cls.texts[0]
+        title.show(game, (game.width // 2, game.height // 7))
     
     @classmethod
     def end(cls, game: Game) -> None:

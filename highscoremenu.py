@@ -23,6 +23,8 @@ class HighScoreMenu(Scenery):
     
     @classmethod
     def start(cls, game: Game) -> None:
+        title = cls.texts[0]
+        title.show(game, position=(game.width // 2, game.height // 7))
         for i, text in enumerate(cls.generate_scores_texts()):
             text.show(game, position=(game.width // 2, game.height // 5 + i * 20))
 

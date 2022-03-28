@@ -25,9 +25,6 @@ class Scenery(ABC):
             game.display.fill(game.background)
             cls.start(game)
 
-            for text in cls.texts:
-                text.show(game, position=(game.width // 2, game.height // 2))
-
             for button in cls.buttons:
                 if button.update(game.display) == 1:
                     cls.controller.execute(button.command)
@@ -66,6 +63,8 @@ class Scenery(ABC):
     @classmethod
     def start(cls, game: Game) -> None:
         """Runs in the begining of the scenery loop"""
+        for text in cls.texts:
+                text.show(game, position=(game.width // 2, game.height // 2))
 
     @classmethod
     def end(cls, game: Game) -> None:
