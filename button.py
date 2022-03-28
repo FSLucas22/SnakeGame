@@ -1,7 +1,7 @@
 from enum import Enum, auto
 import pygame
 from dataclasses import dataclass, field
-from controllerinterface import ControllerInterface
+from controller import Controller
 from texts import Font, text_object
 from typing import Callable, Any
 from colors import Color
